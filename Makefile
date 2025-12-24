@@ -19,6 +19,10 @@ vet: ## Run go vet against code.
 test: mock fmt vet ## Run tests.
 	go test -v ./...
 
+.PHONY: build
+build:
+	CGO_ENABLED=0 go build -o sbomreport-to-dependencytrack
+
 .PHONY: helm
 helm:
 	cd charts && helm package ../helm/sbomreport-to-dependencytrack && helm repo index .
