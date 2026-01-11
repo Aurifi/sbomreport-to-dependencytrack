@@ -17,7 +17,7 @@
       devShell = with pkgs;
         mkShell rec {
           buildInputs = [
-            go_1_26
+            go_1_25
             golangci-lint
           ];
         };

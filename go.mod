@@ -1,6 +1,6 @@
 module github.com/takumakume/sbomreport-to-dependencytrack
 
-go 1.26
+go 1.25
 
 require (
 	github.com/DependencyTrack/client-go v0.18.0
